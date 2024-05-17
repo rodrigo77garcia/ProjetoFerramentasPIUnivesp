@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Caixa de Ferramenta</title>
+    <style>
+    h2 {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 10px 0;
+        margin: 0;
+    }
+    body {
+        padding-top: 50px; /* Ajuste este valor conforme necessário */
+        background-image: url('https://example.com/background.jpg');
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    form {
+        background-color: lightblue;
+        padding: 20px;
+        border-radius: 8px;
+        width: 50%;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+    label {
+        display: block;
+        margin-bottom: 5px; /* Diminuiu o espaçamento entre a label e o textbox */
+        font-family: 'Arial', sans-serif; /* Define a fonte para Arial */
+        font-size: 14px; /* Define o tamanho da fonte para 14px */
+        color: #333; /* Define a cor da fonte para um cinza escuro */
+        font-weight: bold; /* Define a fonte para negrito */
+    }
+    input {
+        display: block;
+        margin-bottom: 10px;
+    }
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+    </style>
+</head>
+
+<body>
+    <h2>Caixa de Ferramenta</h2>
+    <form>
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome"><br>
+        <label for="local">Local:</label><br>
+        <input type="text" id="local" name="local"><br>
+        <label for="descricao">Descrição:</label><br>
+        <input type="text" id="descricao" name="descricao"><br>
+        <label for="marcaModelo">Marca/Modelo:</label><br>
+        <input type="text" id="marcaModelo" name="marcaModelo"><br>
+        <label for="dataEmprestimo">Data Empréstimo:</label><br>
+        <input type="date" id="dataEmprestimo" name="dataEmprestimo"><br>
+        <label for="dataDevolucao">Data Devolução:</label><br>
+        <input type="date" id="dataDevolucao" name="dataDevolucao"><br>
+        <label for="colaborador">Colaborador:</label><br>
+        <input type="text" id="colaborador" name="colaborador"><br>
+        <label for="setor">Setor:</label><br>
+        <input type="text" id="setor" name="setor"><br>
+        <label for="ferramenta">Ferramenta:</label><br>
+        <input type="text" id="ferramenta" name="ferramenta"><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
